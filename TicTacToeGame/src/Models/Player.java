@@ -14,7 +14,7 @@ public class Player {
     private String name;
     private int id;
     private PlayerType playerType;
-    private Scanner scanner;
+    private final Scanner scanner;
 
     public Player(char symbol, String name, int id, PlayerType playerType) {
         this.symbol = symbol;
@@ -63,7 +63,7 @@ public class Player {
         int row = scanner.nextInt();
         int col = scanner.nextInt();
 
-        while(validateMove(row, col, board)==false){
+        while(!validateMove(row, col, board)){
             System.out.println(this.name+", Invalid move, please try again ");
 
             row = scanner.nextInt();
@@ -85,10 +85,7 @@ public class Player {
         if(col>=board.getDimension() || col<0){
             return false;
         }
-        if(!CellState.EMPTY.equals(board.getBoard().get(row).get(col).getCellState())){
-            return false;
-        }
-        return true;
+        return CellState.EMPTY.equals(board.getBoard().get(row).get(col).getCellState());
     }
 
 
