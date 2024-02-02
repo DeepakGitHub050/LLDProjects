@@ -1,9 +1,9 @@
 package Models;
 
-import tictactoe.exception.DuplicateSymbolException;
-import tictactoe.exception.MoreThanOneBotException;
-import tictactoe.exception.PlayersCountMismatchException;
-import tictactoe.winningstrategies.WinningStrategy;
+import Exceptions.DuplicateSymbolException;
+import Exceptions.MoreThanOneBotException;
+import Exceptions.PlayersCountMismatchException;
+import WinningStrategies.WinningStrategy;
 
 import java.util.ArrayList;
 import java.util.HashSet;

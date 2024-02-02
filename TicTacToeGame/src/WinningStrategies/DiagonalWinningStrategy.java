@@ -1,7 +1,7 @@
 package WinningStrategies;
 
-import tictactoe.models.Board;
-import tictactoe.models.Move;
+import Models.Move;
+import Models.Board;
 
 import java.util.HashMap;
 import java.util.Map;

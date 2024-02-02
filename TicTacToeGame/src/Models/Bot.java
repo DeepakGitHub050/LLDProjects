@@ -1,7 +1,7 @@
 package Models;
 
-import tictactoe.botplayingstrategy.BotPlayingStrategy;
-import tictactoe.botplayingstrategy.BotPlayingStrategyFactory;
+import BotPlayingStrategies.BotPlayingStrategy;
+import BotPlayingStrategies.BotPlayingStrategyFactory;
 
 public class Bot extends Player{
 

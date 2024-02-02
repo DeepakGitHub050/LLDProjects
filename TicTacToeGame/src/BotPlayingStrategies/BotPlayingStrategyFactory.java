@@ -1,6 +1,6 @@
-package tictactoe.botplayingstrategy;
+package BotPlayingStrategies;
 
-import tictactoe.models.BotDifficultyLevel;
+import Models.BotDifficultyLevel;
 
 public class BotPlayingStrategyFactory {
 

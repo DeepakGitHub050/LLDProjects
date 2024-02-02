@@ -1,8 +1,8 @@
-package tictactoe.botplayingstrategy;
+package BotPlayingStrategies;
 
-import tictactoe.models.Board;
-import tictactoe.models.Cell;
-import tictactoe.models.CellState;
+import Models.Board;
+import Models.Cell;
+import Models.CellState;
 
 import java.util.List;
 

@@ -1,14 +1,14 @@
-package tictactoe.AppRunner;
+package AppRunner;
 
-import tictactoe.controller.GameController;
-import tictactoe.exception.DuplicateSymbolException;
-import tictactoe.exception.MoreThanOneBotException;
-import tictactoe.exception.PlayersCountMismatchException;
-import tictactoe.models.*;
-import tictactoe.winningstrategies.ColWinningStrategy;
-import tictactoe.winningstrategies.DiagonalWinningStrategy;
-import tictactoe.winningstrategies.RowWinningStrategy;
-import tictactoe.winningstrategies.WinningStrategy;
+import Controller.GameController;
+import Exceptions.DuplicateSymbolException;
+import Exceptions.MoreThanOneBotException;
+import Exceptions.PlayersCountMismatchException;
+import Models.*;
+import WinningStrategies.ColWinningStrategy;
+import WinningStrategies.DiagonalWinningStrategy;
+import WinningStrategies.RowWinningStrategy;
+import WinningStrategies.WinningStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ public class App {
         List<Player> playerList = new ArrayList<>();
         List<WinningStrategy> winningStrategies = new ArrayList<>();
 
-        playerList.add(new Player('X', "Keerthi", 1, PlayerType.HUMAN));
+        playerList.add(new Player('X', "Dks", 1, PlayerType.HUMAN));
         playerList.add(new Bot('0', "GPT", 2, PlayerType.BOT, BotDifficultyLevel.EASY));
 
         winningStrategies.add(new RowWinningStrategy());

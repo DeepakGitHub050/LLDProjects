@@ -1,11 +1,11 @@
-package tictactoe.controller;
+package Controller;
 
-import tictactoe.exception.DuplicateSymbolException;
-import tictactoe.exception.MoreThanOneBotException;
-import tictactoe.exception.PlayersCountMismatchException;
-import tictactoe.models.Game;
-import tictactoe.models.Player;
-import tictactoe.winningstrategies.WinningStrategy;
+import Exceptions.DuplicateSymbolException;
+import Exceptions.MoreThanOneBotException;
+import Exceptions.PlayersCountMismatchException;
+import Models.Game;
+import Models.Player;
+import WinningStrategies.WinningStrategy;
 
 import java.util.List;
 

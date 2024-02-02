@@ -1,7 +1,7 @@
-package tictactoe.botplayingstrategy;
+package BotPlayingStrategies;
 
-import tictactoe.models.Board;
-import tictactoe.models.Cell;
+import Models.Board;
+import Models.Cell;
 
 public interface BotPlayingStrategy {
 
